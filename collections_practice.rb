@@ -36,5 +36,5 @@ end
 
 def add_s(arr)
   # arr.each {|element, index| element[0 && 2..-1] << "s"}
-  arr.each_with_index.collect {|element, index| element << "s" if index == 0 && 2..-1}
+  arr.each_with_index.collect {|element, index| index !== 1 element << "s"}
 end
